@@ -99,7 +99,7 @@ export default function HomeClient() {
             href="#nơi-mình-nói-chuyện-xàm-và-chia-sẻ-một-số-kinh-nghiệm-về-coding-sysadmin-hackintosh-và-nhiều-thứ-khác-"
             whileHover={{ scale: 1.1 }}
           ></motion.a>
-          code yapers :D
+          code yapers :3
         </motion.h2>
 
         <motion.figure
