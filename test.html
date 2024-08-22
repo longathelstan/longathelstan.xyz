@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #2C2F33;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.status {
+  background-color: #202225;
+  border-radius: 5px;
+  padding: 15px;
+  margin-right: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.status-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.status-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #36393F;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.status-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #7289DA;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.status-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #202225;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.info {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #B9BBBE;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="status">
+      <div class="status-text">Playing a game</div>
+      <div class="status-icon"></div>
+    </div>
+    <div>
+      <div class="info">Code</div>
+      <div class="info-text">In longathelstan.xyz - 0 problems found</div>
+      <div class="info-text">Working on style.css:268:12</div>
+      <div class="info-text">01:57:38 elapsed</div>
+    </div>
+  </div>
+</body>
+</html>
