@@ -27,7 +27,11 @@
 			crossorigin />
 		<title>Tlowng</title>
 	</head>
+	<audio src="./music/you.mp3" class="myAudio" autoplay="true" preload="auto"></audio>
 	<body oncontextmenu="return false;">
+		<div class="preload" onclick="enterPage()">
+			<div class="text">click to enter...</div>
+		</div>
 		<div class="container">
 			<div class="profile-border box-color">
 				<div class="profile box-color">
@@ -233,6 +237,13 @@
 		</div>
 		<!-- <script src="./scripts/script.js"></script> -->
 		<script src="./scripts/script_static.js"></script>
+		<script>
+		function enterPage() {
+			const preloadFrame = document.querySelector('.preload');
+			preloadFrame.classList.add('hidden'); 
+			document.querySelector('.myAudio').play(); 
+		}
+		</script>
 		<!-- <script src="./scripts/no_dev.js"></script> -->
 		<!-- <script src="./scripts/message.js"></script> -->
 	</body>
