@@ -5,6 +5,69 @@
   transition: width 0.5s ease, height 0.5s ease;
 }
 
+.discord-activities {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.activities-status {
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  text-align: center;
+  position: relative; 
+  width: 100px;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.small-image {
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;      
+  right: -5px;       
+  z-index: 1;      
+}
+
+.activities-status-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.activities-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+  line-height: 20px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.activities-info-text {
+  font-size: 14px;
+  color: #B9BBBE;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
 .preload {
   position: fixed; 
   top: 0;
