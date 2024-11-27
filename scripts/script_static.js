@@ -29,7 +29,8 @@ async function fetchDiscordStatus() {
 		const avatarImageURL = discord_user.avatar;
 		const avatarDecorationAsset = discord_user.avatar_decoration_data.asset;
 
-		elements.avaterDecoration.src = `https://cdn.discordapp.com/avatar-decoration-presets/${avatarDecorationAsset}.webp`;
+		elements.avaterDecoration.src = `https://9d.longathelstan.xyz/decoration.webp`;
+		//elements.avaterDecoration.src = `https://cdn.discordapp.com/avatar-decoration-presets/${avatarDecorationAsset}.webp`;
 		elements.avatarImage.src = `https://cdn.discordapp.com/avatars/${userID}/${avatarImageURL}.png`;
 		elements.displayName.innerHTML = discord_user.display_name;
 		elements.username.innerHTML = discord_user.username;
