@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts Import */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/space-grotesk-latin-wght-normal.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('/fonts/space-mono-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    /* Updated colors to better match necron.dev */
+    --background: 0 0% 95%;
+    --foreground: 280 13% 24%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 280 13% 24%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 13% 24%;
+
+    --primary: 280 33% 53%;
+    --primary-foreground: 355.7 100% 97.3%;
+
+    --secondary: 136 33% 52%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 280 5% 90%;
+    --muted-foreground: 280 5% 50%;
+
+    --accent: 48 80% 83%;
+    --accent-foreground: 280 33% 32%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 280 5% 87%;
+    --input: 280 5% 87%;
+    --ring: 280 33% 52%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 280 13% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 280 13% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 280 13% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 280 33% 52%;
+    --primary-foreground: 0 0% 95%;
+
+    --secondary: 136 33% 42%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 280 13% 20%;
+    --muted-foreground: 280 5% 65%;
+
+    --accent: 48 80% 83%;
+    --accent-foreground: 280 13% 12%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 280 13% 25%;
+    --input: 280 13% 25%;
+    --ring: 280 33% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-weight: 600;
+  }
+  code {
+    font-family: 'Space Mono', monospace;
+  }
+
+  /* Smooth theme transition */
+  .theme-transition {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .theme-transition *:not(.preserve-transition) {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.3s;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply max-w-none;
+  }
+
+  .prose h2 {
+    @apply text-2xl font-semibold mt-8 mb-4;
+  }
+
+  .prose h3 {
+    @apply text-xl font-semibold mt-6 mb-3;
+  }
+
+  .prose p {
+    @apply my-4;
+  }
+
+  .prose a {
+    @apply text-primary underline underline-offset-4 hover:text-primary/90;
+  }
+
+  .prose code {
+    @apply bg-muted px-1.5 py-0.5 rounded text-sm;
+  }
+
+  .autolink-anchor {
+    @apply mr-2 no-underline;
+  }
+
+  /* Code block styles */
+  figure {
+    @apply relative rounded-lg overflow-hidden my-6 shadow-md;
+  }
+
+  figcaption {
+    @apply flex items-center gap-2 text-sm bg-card border border-border rounded-t-md px-4 py-2 text-muted-foreground;
+  }
+
+  figure pre {
+    @apply text-sm rounded-b-md p-4 overflow-x-auto bg-muted/80 m-0 border border-t-0 border-border;
+  }
+
+  .copy-button {
+    @apply absolute right-3 top-3 p-1.5 rounded-md hover:bg-accent transition-colors;
+  }
+
+  /* Enhanced Social Button Styles */
+  .group\/social {
+    will-change: transform;
+  }
+
+  .group\/social:hover {
+    transform-origin: center;
+    box-shadow: 0 0 8px rgba(var(--accent), 0.5);
+  }
+
+  /* Improved scroll styling */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted/50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 4px 2px rgba(var(--primary), 0.1);
+  }
+  50% {
+    box-shadow: 0 0 8px 4px rgba(var(--primary), 0.2);
+  }
+}
+
+/* New ripple animation for social buttons */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--accent), 0.3);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--accent), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--accent), 0);
+  }
+}
