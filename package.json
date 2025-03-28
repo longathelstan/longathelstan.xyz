@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@radix-ui/react-hover-card": "^1.1.6",
     "@radix-ui/react-separator": "^1.1.2",
