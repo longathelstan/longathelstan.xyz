@@ -21,66 +21,67 @@
 
 @layer base {
   :root {
-    /* Updated colors to better match necron.dev */
-    --background: 0 0% 95%;
-    --foreground: 280 13% 24%;
+    /* Catppuccin Latte (Light) colors */
+    --background: 220 23% 95%; /* ctp-latte-base */
+    --foreground: 234 16% 35%; /* ctp-latte-text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 280 13% 24%;
+    --card: 230 19% 98%; /* ctp-latte-surface0 */
+    --card-foreground: 234 16% 35%; /* ctp-latte-text */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 280 13% 24%;
+    --popover: 230 19% 98%; /* ctp-latte-surface0 */
+    --popover-foreground: 234 16% 35%; /* ctp-latte-text */
 
-    --primary: 280 33% 53%;
-    --primary-foreground: 355.7 100% 97.3%;
+    --primary: 267 83% 60%; /* ctp-latte-mauve, slightly darker */
+    --primary-foreground: 220 23% 95%; /* ctp-latte-base */
 
-    --secondary: 136 33% 52%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 183 74% 35%; /* ctp-latte-teal, slightly darker */
+    --secondary-foreground: 220 23% 95%; /* ctp-latte-base */
 
-    --muted: 280 5% 90%;
-    --muted-foreground: 280 5% 50%;
+    --muted: 220 23% 90%; /* ctp-latte-surface1 */
+    --muted-foreground: 234 16% 45%; /* ctp-latte-subtext0 */
 
-    --accent: 48 80% 83%;
-    --accent-foreground: 280 33% 32%;
+    --accent: 267 83% 75%; /* ctp-latte-mauve, brighter */
+    --accent-foreground: 234 16% 35%; /* ctp-latte-text */
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 280 5% 87%;
-    --input: 280 5% 87%;
-    --ring: 280 33% 52%;
+    --border: 220 23% 85%; /* ctp-latte-surface2 */
+    --input: 220 23% 85%; /* ctp-latte-surface2 */
+    --ring: 267 83% 60%; /* ctp-latte-mauve */
 
     --radius: 0.75rem;
   }
 
   .dark {
-    --background: 280 13% 12%;
-    --foreground: 0 0% 95%;
+    /* Catppuccin Mocha Mauve theme colors */
+    --background: 240 21% 15%; /* ctp-mocha-base */
+    --foreground: 240 21% 83%; /* ctp-mocha-text */
 
-    --card: 280 13% 15%;
-    --card-foreground: 0 0% 95%;
+    --card: 240 21% 19%; /* ctp-mocha-surface0 */
+    --card-foreground: 240 21% 83%; /* ctp-mocha-text */
 
-    --popover: 280 13% 15%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 240 21% 19%; /* ctp-mocha-surface0 */
+    --popover-foreground: 240 21% 83%; /* ctp-mocha-text */
 
-    --primary: 280 33% 52%;
-    --primary-foreground: 0 0% 95%;
+    --primary: 267 84% 81%; /* ctp-mocha-mauve */
+    --primary-foreground: 240 21% 15%; /* ctp-mocha-base */
 
-    --secondary: 136 33% 42%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 183 74% 70%; /* ctp-mocha-teal */
+    --secondary-foreground: 240 21% 15%; /* ctp-mocha-base */
 
-    --muted: 280 13% 20%;
-    --muted-foreground: 280 5% 65%;
+    --muted: 240 21% 22%; /* ctp-mocha-surface1 */
+    --muted-foreground: 240 21% 65%; /* ctp-mocha-subtext0 */
 
-    --accent: 48 80% 83%;
-    --accent-foreground: 280 13% 12%;
+    --accent: 267 84% 81%; /* ctp-mocha-mauve */
+    --accent-foreground: 240 21% 15%; /* ctp-mocha-base */
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 280 13% 25%;
-    --input: 280 13% 25%;
-    --ring: 280 33% 52%;
+    --border: 240 21% 25%; /* ctp-mocha-surface2 */
+    --input: 240 21% 25%; /* ctp-mocha-surface2 */
+    --ring: 267 84% 81%; /* ctp-mocha-mauve */
   }
 }
 

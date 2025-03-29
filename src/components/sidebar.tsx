@@ -6,6 +6,7 @@ import { Box, Github, Facebook, Ship } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { motion } from "framer-motion";
 import { SocialButton } from "@/components/ui/social-button";
+import DiscordRPC from "@/components/discord-rpc";
 
 export default function Sidebar() {
   const socialLinks = [
@@ -33,29 +34,29 @@ export default function Sidebar() {
 
   return (
     <motion.aside
-      className="w-full md:w-64 flex flex-col items-center md:items-start md:sticky md:top-20 self-start mb-8 md:mb-0 p-6 rounded-xl bg-card shadow-sm border border-border"
+      className="w-full md:w-64 flex flex-col items-center md:items-start md:sticky md:top-20 self-start mb-8 md:mb-0 p-4 rounded-xl bg-card shadow-sm border border-border"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.1 }}
     >
-      <div className="flex flex-col items-center md:items-start space-y-2 mb-6 w-full">
+      <div className="flex flex-col items-center md:items-start space-y-2 mb-4 w-full">
         <motion.div
-          className="w-40 h-40 relative rounded-lg overflow-hidden bg-[#ffde9c]"
+          className="w-32 h-32 relative rounded-lg overflow-hidden bg-[#ffde9c]"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
         >
           <Image
             src="/images/awl.jpg"
             alt="Capoo"
-            width={160}
-            height={160}
+            width={128}
+            height={128}
             className="object-cover"
             unoptimized
           />
         </motion.div>
 
         <motion.h2
-          className="text-2xl font-bold text-center md:text-left mt-4"
+          className="text-xl font-bold text-center md:text-left mt-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -72,17 +73,17 @@ export default function Sidebar() {
         </motion.div>
 
         <motion.p
-          className="text-muted-foreground text-center md:text-left"
+          className="text-sm text-muted-foreground text-center md:text-left"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          amateur web & game developer 
+          amateur web & game developer
         </motion.p>
       </div>
 
       <motion.div
-        className="flex gap-3"
+        className="flex gap-2 flex-wrap justify-center md:justify-start mb-4 w-full"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -96,6 +97,9 @@ export default function Sidebar() {
           />
         ))}
       </motion.div>
+
+      {/* Discord RPC */}
+      <DiscordRPC />
     </motion.aside>
   );
 }

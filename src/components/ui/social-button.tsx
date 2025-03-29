@@ -8,22 +8,21 @@ export interface SocialButtonProps extends React.ComponentPropsWithoutRef<"a"> {
   title: string;
 }
 
-
 const SocialButton = React.forwardRef<HTMLAnchorElement, SocialButtonProps>(
   ({ className, icon, title, children, ...props }, ref) => {
     const [isHovered, setIsHovered] = React.useState(false);
 
     return (
-      <HoverFx glowSize={80} glowOpacity={0.2}>
+      <HoverFx glowSize={60} glowOpacity={0.2}>
         <motion.a
           ref={ref}
           className={cn(
-            "relative overflow-hidden p-2 rounded-xl text-foreground bg-transparent group/social flex items-center justify-center transition-all duration-300",
+            "relative overflow-hidden p-1.5 rounded-lg text-foreground bg-transparent group/social flex items-center justify-center transition-all duration-300",
             className
           )}
-          
+
           whileHover={{
-            scale: 1.15,
+            scale: 1.12,
             transition: {
               type: "spring",
               stiffness: 400,
@@ -49,21 +48,21 @@ const SocialButton = React.forwardRef<HTMLAnchorElement, SocialButtonProps>(
                   scale: 1,
                   transition: {
                     type: "animate",
-                    delay: 0.1,
+                    delay: 0.05,
                     stiffness: 300,
                     damping: 20,
-                    duration: 0.2,
+                    duration: 0.15,
                   }
                 }}
                 exit={{
                   opacity: 0,
                   scale: 0,
                   transition: {
-                    duration: 0.15,
+                    duration: 0.1,
                   }
                 }}
                 style={{
-                  borderRadius: "1rem",
+                  borderRadius: "0.5rem",
                 }}
               />
             )}
