@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
 interface BlogPost {
@@ -11,6 +10,18 @@ interface BlogPost {
   description: string;
   date: string;
 }
+
+// Helper function to estimate reading time based on word count
+const estimateReadingTime = (description: string): number => {
+  const wordsPerMinute = 200;
+  const wordCount = description.split(/\s+/).length;
+  return Math.max(1, Math.ceil(wordCount / wordsPerMinute));
+};
+
+// Helper function to get word count
+const getWordCount = (description: string): number => {
+  return description.split(/\s+/).length;
+};
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -37,45 +48,55 @@ const itemVariants = {
 
 export default function BlogPageClient({ posts }: { posts: BlogPost[] }) {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
       <motion.div
-        className="space-y-8"
+        className="space-y-10"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
         <motion.div variants={itemVariants}>
-          <h1 className="text-3xl font-bold mb-6">Blog Posts</h1>
+          <h1 className="text-3xl font-bold mb-8">Blog Posts</h1>
         </motion.div>
 
         <motion.div
-          className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+          className="space-y-6"
           variants={containerVariants}
         >
-          {posts.map((post) => (
-            <motion.div key={post.id} variants={itemVariants}>
-              <Link href={`/blog/${post.slug}`} className="block h-full">
-                <Card className="h-full transition-all duration-300 hover:shadow-md border border-border hover:border-primary/30 hover:-translate-y-1">
-                  <CardHeader>
-                    <CardTitle className="text-xl">{post.title}</CardTitle>
-                    <CardDescription className="text-muted-foreground text-sm">
-                      {new Date(post.date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">{post.description}</p>
-                  </CardContent>
-                  <CardFooter>
-                    <p className="text-sm text-primary">Read more →</p>
-                  </CardFooter>
-                </Card>
-              </Link>
-            </motion.div>
-          ))}
+          {posts.map((post) => {
+            const wordCount = getWordCount(post.description);
+            const readingTime = estimateReadingTime(post.description);
+
+            return (
+              <motion.div
+                key={post.id}
+                variants={itemVariants}
+                className="border border-border rounded-lg overflow-hidden bg-card shadow-sm transition-all duration-300 hover:shadow-md hover:border-primary/30"
+              >
+                <Link href={`/blog/${post.slug}`} className="block p-6">
+                  <div className="mb-2 text-xs text-muted-foreground">
+                    {wordCount} words • {readingTime} minute{readingTime !== 1 ? 's' : ''} to read
+                  </div>
+
+                  <h2 className="text-2xl font-bold mb-2 text-primary">{post.title}</h2>
+
+                  <div className="mb-4 text-sm text-muted-foreground">
+                    Posted on {new Date(post.date).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </div>
+
+                  <p className="text-foreground mb-3">{post.description}</p>
+
+                  <div className="text-sm text-primary font-medium">
+                    Read more →
+                  </div>
+                </Link>
+              </motion.div>
+            );
+          })}
         </motion.div>
       </motion.div>
     </div>

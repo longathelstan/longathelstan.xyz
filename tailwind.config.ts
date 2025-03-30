@@ -56,6 +56,20 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)'
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' }
+        },
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' }
+        }
+      },
+      animation: {
+        marquee: 'marquee 10s linear infinite',
+        blink: 'blink 1.5s ease-in-out infinite'
+      },
       container: {
       center: true,
       padding: {

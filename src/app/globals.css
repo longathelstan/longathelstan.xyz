@@ -186,6 +186,18 @@
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-primary/50;
   }
+
+  /* Add username truncation class */
+  .discord-username {
+    max-width: 5.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+  }
 }
 
 /* Animation keyframes */
@@ -228,5 +240,15 @@
   }
   100% {
     box-shadow: 0 0 0 0 rgba(var(--accent), 0);
+  }
+}
+
+/* Updated keyframes for the scrolling text component to ensure smooth scrolling */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

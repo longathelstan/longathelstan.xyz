@@ -7,7 +7,7 @@ import ClientBlogPost from "./client-page";
 const mockPosts = {
   "hello-world": {
     title: "Hello World",
-    date: "2023-03-12",
+    date: "2025-03-12",
     content: `
       <p>This is my first blog post. Welcome to my blog!</p>
       <p>I plan to write about technology, programming, and other topics that interest me.</p>
@@ -18,7 +18,7 @@ const mockPosts = {
   },
   "setting-up-arch-linux": {
     title: "Setting up Arch Linux",
-    date: "2023-03-25",
+    date: "2025-03-25",
     content: `
       <p>In this guide, I'll walk you through the process of setting up Arch Linux with a custom desktop environment.</p>
       <h2>Prerequisites</h2>
@@ -34,7 +34,7 @@ const mockPosts = {
   },
   "react-component-design": {
     title: "React Component Design",
-    date: "2023-04-10",
+    date: "2025-04-10",
     content: `
       <p>Designing effective React components is crucial for building maintainable and reusable code.</p>
       <h2>Component Composition</h2>

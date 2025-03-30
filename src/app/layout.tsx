@@ -12,6 +12,7 @@ export const metadata = {
   site_name: "@longathelstan",
   openGraph: {
     title: "Lowng",
+    site_name: "@longathelstan",
     description: "og nay biet longathelstan k?",
     url: "https://longathelstan.xyz",
     images: [ 

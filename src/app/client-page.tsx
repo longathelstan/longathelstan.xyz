@@ -101,8 +101,8 @@ export default function HomeClient() {
               className="flex items-center gap-2"
             >
               <span className="flex items-center justify-center w-6 h-6 ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z" />
                 </svg>
               </span>
               <span className="text-muted-foreground">About me :D</span>
@@ -111,7 +111,7 @@ export default function HomeClient() {
           <HoverFx glowSize={120} glowOpacity={0.1} glowColor="var(--accent)">
             <pre className="text-sm rounded-b-md p-4 overflow-x-auto bg-muted/80 border border-t-0 border-border">
             <code className="language-rust">
-              <span className="text-yellow-400 dark:text-yellow-300 italic">Me</span>
+              <span className="text-primary italic">Me</span>
               <span className="text-slate-500 dark:text-slate-400"> (</span>
               {'\n'}
               <span className="text-slate-700 dark:text-slate-300">    aliases</span>
