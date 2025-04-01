@@ -10,14 +10,12 @@ interface BlogPost {
   content: string;
 }
 
-// Helper function to estimate reading time based on word count
 const estimateReadingTime = (content: string): number => {
   const wordsPerMinute = 200;
   const wordCount = content.split(/\s+/).length;
   return Math.max(1, Math.ceil(wordCount / wordsPerMinute));
 };
 
-// Helper function to get word count
 const getWordCount = (content: string): number => {
   return content.split(/\s+/).length;
 };
