@@ -37,15 +37,28 @@ export default function HomeClient() {
     const codeContent = `Me (
     aliases: ["longathelstan", "lowng", "tlowng"],
     pronouns: "he/him",
-    works: ["sec schooler", "amateur mern-stack developer"],
+    works: [
+      "high schooler", 
+      "amateur mern-stack developer", 
+      "amateur software engineer", 
+      "head of dev org @BloomProjects"
+    ],
     location: "vietnam",
     interests: {
-        "frameworks": ["reactjs", "nextjs", "svelte", "TailwindCSS"],
+        "frameworks": ["reactjs", "nextjs", "svelte", "express.js"],
         "languages": ["javascript", "typescript", "py", "rust", "cpp", "java", "kotlin"],
-        "devops": ["git", "bash", "googleconsole"],
+        "technologies": ["git", "docker", "rpc", "mongodb"],
+        "misc": [
+            "system engineering", "competitive programming",
+            "reverse engineering", "system design"
+        ]
     },
+    goals: ["senior wse", "VOI26", "CN8-UET", "co duoc e (hopeless)"],
     contacts: {
-        "email": ["mail@longathelstan.xyz"]
+        "email": ["mail@lowng.site", "lowng@thptchuyenhatinh.edu.vn"],
+        "facebook": ["@longathelstan"],
+        "instagram": ["@longathelstan"],
+        "discord": ["longathelstan"]
     }
 )`;
 
@@ -123,85 +136,143 @@ export default function HomeClient() {
               <span className="text-slate-500 dark:text-slate-400">,</span>
               <span className="text-green-600 dark:text-green-400"> "tlowng"</span>
               <span className="text-slate-500 dark:text-slate-400">],</span>
-  {'\n'}
-  <span className="text-slate-700 dark:text-slate-300">    pronouns</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-green-600 dark:text-green-400"> "he/him"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  {'\n'}
-  <span className="text-slate-700 dark:text-slate-300">    works</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-slate-500 dark:text-slate-400"> [</span>
-  <span className="text-green-600 dark:text-green-400">"sec schooler"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "amateur mern-stack developer"</span>
-  <span className="text-slate-500 dark:text-slate-400">],</span>
-  {'\n'}
-  <span className="text-slate-700 dark:text-slate-300">    location</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-green-600 dark:text-green-400"> "vietnam"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  {'\n'}
-  <span className="text-slate-700 dark:text-slate-300">    interests</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-slate-500 dark:text-slate-400"> {'{'}</span>
-  {'\n'}
-  <span className="text-green-600 dark:text-green-400">        "frameworks"</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-slate-500 dark:text-slate-400"> [</span>
-  <span className="text-green-600 dark:text-green-400">"reactjs"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "nextjs"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "svelte"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "TailwindCSS"</span>
-  <span className="text-slate-500 dark:text-slate-400">],</span>
-  {'\n'}
-  <span className="text-green-600 dark:text-green-400">        "languages"</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-slate-500 dark:text-slate-400"> [</span>
-  <span className="text-green-600 dark:text-green-400">"javascript"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "typescript"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "py"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "rust"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "cpp"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "java"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "kotlin"</span>
-  <span className="text-slate-500 dark:text-slate-400">],</span>
-  {'\n'}
-  <span className="text-green-600 dark:text-green-400">        "devops"</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-slate-500 dark:text-slate-400"> [</span>
-  <span className="text-green-600 dark:text-green-400">"git"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "bash"</span>
-  <span className="text-slate-500 dark:text-slate-400">,</span>
-  <span className="text-green-600 dark:text-green-400"> "googleconsole"</span>
-  <span className="text-slate-500 dark:text-slate-400">]</span>
-  {'\n'}
-  <span className="text-slate-500 dark:text-slate-400">    {'}'},</span>
-  {'\n'}
-  <span className="text-slate-700 dark:text-slate-300">    contacts</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-slate-500 dark:text-slate-400"> {'{'}</span>
-  {'\n'}
-  <span className="text-green-600 dark:text-green-400">        "email"</span>
-  <span className="text-teal-500 dark:text-teal-400">:</span>
-  <span className="text-slate-500 dark:text-slate-400"> [</span>
-  <span className="text-green-600 dark:text-green-400">"mail@longathelstan.xyz"</span>
-  <span className="text-slate-500 dark:text-slate-400">]</span>
-  {'\n'}
-  <span className="text-slate-500 dark:text-slate-400">    {'}'}</span>
-  {'\n'}
-  <span className="text-slate-500 dark:text-slate-400">)</span>
-</code>
+              {'\n'}
+              <span className="text-slate-700 dark:text-slate-300">    pronouns</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-green-600 dark:text-green-400"> "he/him"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              {'\n'}
+              <span className="text-slate-700 dark:text-slate-300">    works</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">      "high schooler"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">      "amateur mern-stack developer"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">      "amateur software engineer"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">      "head of dev org @BloomProjects"</span>
+              {'\n'}
+              <span className="text-slate-500 dark:text-slate-400">    ],</span>
+              {'\n'}
+              <span className="text-slate-700 dark:text-slate-300">    location</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-green-600 dark:text-green-400"> "vietnam"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              {'\n'}
+              <span className="text-slate-700 dark:text-slate-300">    interests</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> {'{'}</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">        "frameworks"</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              <span className="text-green-600 dark:text-green-400">"reactjs"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "nextjs"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "svelte"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "express.js"</span>
+              <span className="text-slate-500 dark:text-slate-400">],</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">        "languages"</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              <span className="text-green-600 dark:text-green-400">"javascript"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "typescript"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "py"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "rust"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "cpp"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "java"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "kotlin"</span>
+              <span className="text-slate-500 dark:text-slate-400">],</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">        "technologies"</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              <span className="text-green-600 dark:text-green-400">"git"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "docker"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "rpc"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "mongodb"</span>
+              <span className="text-slate-500 dark:text-slate-400">],</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">        "misc"</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">            "system engineering"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "competitive programming"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">            "reverse engineering"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "system design"</span>
+              {'\n'}
+              <span className="text-slate-500 dark:text-slate-400">        ]</span>
+              {'\n'}
+              <span className="text-slate-500 dark:text-slate-400">    {'}'},</span>
+              {'\n'}
+              <span className="text-slate-700 dark:text-slate-300">    goals</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              <span className="text-green-600 dark:text-green-400">"senior wse"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "VOI26"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "CN8-UET"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "co duoc e (hopeless)"</span>
+              <span className="text-slate-500 dark:text-slate-400">],</span>
+              {'\n'}
+              <span className="text-slate-700 dark:text-slate-300">    contacts</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> {'{'}</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">        "email"</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              <span className="text-green-600 dark:text-green-400">"mail@lowng.site"</span>
+              <span className="text-slate-500 dark:text-slate-400">,</span>
+              <span className="text-green-600 dark:text-green-400"> "lowng@thptchuyenhatinh.edu.vn"</span>
+              <span className="text-slate-500 dark:text-slate-400">],</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">        "facebook"</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              <span className="text-green-600 dark:text-green-400">"@longathelstan"</span>
+              <span className="text-slate-500 dark:text-slate-400">],</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">        "instagram"</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              <span className="text-green-600 dark:text-green-400">"@longathelstan"</span>
+              <span className="text-slate-500 dark:text-slate-400">],</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">        "discord"</span>
+              <span className="text-teal-500 dark:text-teal-400">:</span>
+              <span className="text-slate-500 dark:text-slate-400"> [</span>
+              <span className="text-green-600 dark:text-green-400">"longathelstan"</span>
+              <span className="text-slate-500 dark:text-slate-400">]</span>
+              {'\n'}
+              <span className="text-slate-500 dark:text-slate-400">    {'}'}</span>
+              {'\n'}
+              <span className="text-slate-500 dark:text-slate-400">)</span>
+            </code>
             </pre>
           </HoverFx>
 
