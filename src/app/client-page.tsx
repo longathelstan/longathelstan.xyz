@@ -41,7 +41,9 @@ export default function HomeClient() {
       "high schooler", 
       "amateur mern-stack developer", 
       "amateur software engineer", 
-      "head of dev org @BloomProjects"
+      "head of dev org @BloomProjects",
+      "dev of dept @CHTCoder",
+      "head of dept @vanchuongmandam"
     ],
     location: "vietnam",
     interests: {
@@ -155,7 +157,11 @@ export default function HomeClient() {
               <span className="text-green-600 dark:text-green-400">      "amateur software engineer"</span>
               <span className="text-slate-500 dark:text-slate-400">,</span>
               {'\n'}
-              <span className="text-green-600 dark:text-green-400">      "head of dev org @BloomProjects"</span>
+              <span className="text-green-600 dark:text-green-400">      "head of dev org @BloomProjects",</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">      "dev of dept @CHTCoder",</span>
+              {'\n'}
+              <span className="text-green-600 dark:text-green-400">      "head of dept @vanchuongmandam"</span>
               {'\n'}
               <span className="text-slate-500 dark:text-slate-400">    ],</span>
               {'\n'}
